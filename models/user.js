@@ -43,4 +43,16 @@ exports.createUser = (user, callback) => {
   });
 };
 
+exports.deleteUser = (username, callback) => {
+  mongo.then((client) => {
+    client
+      .db("WEB")
+      .collection("users")
+      .deleteOne({ username: username })
+      .then((resp) => {
+        callback(resp);
+      });
+  });
+};
+
 exports.userSchema = schema;
