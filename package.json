@@ -1,0 +1,36 @@
+{
+  "name": "web-ejercicio-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon --ignore './messages.json' ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chpatinos/Web-ejercicio-express.git"
+  },
+  "author": "Carlos Patiño",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chpatinos/Web-ejercicio-express/issues"
+  },
+  "homepage": "https://github.com/chpatinos/Web-ejercicio-express#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.6.2",
+    "morgan": "^1.10.0",
+    "ws": "^7.3.1"
+  }
+}
